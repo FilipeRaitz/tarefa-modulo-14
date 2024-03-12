@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    --color-turquoise-light: rgb(0, 161, 170);
+    --color-turquoise-medium: rgb(0, 156, 161);
+    --color-turquoise-highlight: rgb(0, 144, 151);
+    --color-turquoise-dark: rgb(0, 131, 138);
+    
+}
+
+body {
+    background-color: var(--color-turquoise-light);
+    color: white;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+header.navbar {
+    background: linear-gradient(
+      0.5turn, 
+      var(--color-turquoise-light) 0%, 65%, var(--color-turquoise-medium) 80% 100%
+    );
+    background-color: var(--color-turquoise-light);
+    color: white;
+}
+
+nav {
+    background-color: inherit;
+}
+
+.nav {
+    background-color: inherit;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.nav-link:hover {
+    color: rgb(189, 15, 143);
+    transition: ease-in-out 0.2s;
+}
+
+#cabeçalho .nav-item:last-of-type .nav-link{
+    background-color: rgb(189, 15, 143);
+    border-radius: 1.5em;
+}
+
+#cabeçalho .nav-item:last-of-type .nav-link:hover{
+    background-color: rgb(227, 39, 177);
+    color: white;
+}
+
+.banner {  
+    background: linear-gradient(
+      .49turn, 
+      rgb(96% 20% 76%) 0%, 50%, var(--color-turquoise-light) 78% 100%
+    );
+    color: white;
+}
+
+.banner-img {
+    display: flex;
+    align-items: center;
+}
+
+.header-planos h2{
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.header-planos h2:first-of-type::after {
+    content: '';
+    background-color: rgb(196, 64, 161);
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.6em;
+}
+
+table {
+    margin: 2em;
+    background-color: var(--color-turquoise-dark);
+}
+
+table th, table tr, table td {
+    padding: 1.5em 1em;
+    border: 1px solid var(--color-turquoise-light);
+}
+
+table thead {
+    background: linear-gradient(
+      .5turn, 
+      var(--color-turquoise-dark) 0%, 63%, var(--color-turquoise-light) 88% 100%
+    );
+}
+
+
+.td-premium {
+    background-color: var(--color-turquoise-highlight);
+}
+
+.tr-planos:hover, .tr-planos:hover .td-premium {
+    background-color: rgb(219, 29, 236, .3) !important;
+    transition: ease-in-out .2s;
+}
+
+.download-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.download-link:hover {
+    color: rgb(189, 15, 143);
+    transition: ease-in-out .2s;
+}
+
+.adquira-premium {
+    background-color: rgb(0, 79, 91);
+    width: 100%;
+}
+
+.nav.nav-tabs {
+ font-size: .8em;
+}
+
+.card-premium-content {
+    padding: 1em;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--color-turquoise-highlight);
+    height: 26em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (width<480px){
+    .card-premium-content {
+        height: 30em;
+    }
+}
+
+.card-premium-content h2 {
+    color: rgb(95, 46, 232);
+    margin-top: .5em;
+    
+
+}
+
+.card-premium-content p {
+    color: rgb(0, 79, 91);
+}
+
+.card-premium-content li i {
+    font-size: 0.8em;
+}
+
+.card-premium-content button {
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: rgb(189, 15, 143);
+    border: none;
+    color: white;
+}
+
+.card-premium-content button:hover {
+    background-color: rgb(227, 39, 177);
+    transition: ease-in-out .2s;
+}
