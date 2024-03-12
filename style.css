@@ -148,7 +148,7 @@ table thead {
 }
 
 .card-premium-content h2 {
-    color: rgb(95, 46, 232);
+    color: rgb(74, 17, 207);
     margin-top: .5em;
     
 
@@ -156,6 +156,9 @@ table thead {
 
 .card-premium-content p {
     color: rgb(0, 79, 91);
+}
+.card-premium-content ul {
+    padding-left: 1em;
 }
 
 .card-premium-content li i {
